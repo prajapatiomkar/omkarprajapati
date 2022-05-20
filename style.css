@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+:root {
+    --drakBlack: #121212;
+    --lightBlack: #1E1E1E;
+    --white: #ffffff;
+    --marginLR: 30px;
+    --headerFont: 25px;
+
+}
+
+/* header */
+.header {
+    align-items: center;
+    font-size: var(--headerFont);
+    display: flex;
+    margin: 20px var(--marginLR);
+    justify-content: space-between;
+    text-transform: uppercase;
+
+
+
+}
+
+.header .logo {
+    padding: 5px;
+   
+    font-size: var(--headerFont);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 12px;
+}
+
+nav ul li a {
+    color: var(--drakBlack);
+}
+
+#contact {
+    padding: 10px;
+    padding: 5px;
+    border: 2px solid var(--lightBlack);
+    color: var(--lightBlack);
+    }
+
+/* main */
+.home {
+    margin: 180px var(--marginLR);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.homeSec2{
+    margin-right: 100px;
+}
+.hTxt1 {
+    color: var(--lightBlack);
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.hTxt2 {
+    color: var(--lightBlack);
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+/* about */
+.heading {
+    margin: 30px 0;
+    font-size: 40px;
+   
+    
+    text-transform: uppercase;
+    color: var(--lightBlack);
+   
+    display: inline-block;
+
+
+}
+
+.about {
+    margin: 210px var(--marginLR);
+}
+
+.subHeading {
+    font-size: 25px;
+    padding: 5px 0;
+
+}
+
+.subHeading span {
+    text-decoration: underline;
+
+}
+
+/* service */
+.service{
+    margin: 210px var(--marginLR);
+
+}
+.serviceContainer{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid var(--lightBlack);
+    
+    box-sizing: border-box;
+}
+.img{
+    height: 100px;
+    padding: 20px;
+    background-color: var(--lightBlack);
+}
+.desc{
+    margin-left:30px;
+}
+.serviceTitle{
+    
+}
+
+/* project */
+.project{
+    margin: 210px var(--marginLR);
+
+}
+/* contact */
+.contact{
+    margin: 210px var(--marginLR);
+
+}
+
+/* responsiveness */
+
+@media screen and (max-width:940px){
+body{
+    margin: 0;
+    padding: 0;
+   border: 1px solid red;
+  
+}
+   .header{
+       position: fixed;
+       top: 0;
+        padding: 0;
+        margin: 0;
+       width: 100%;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .logo{
+       text-align: center;
+       display: inline-block;
+   }
+    nav ul li a{
+        text-align: center;
+        font-size: 7px;
+    }
+
+    .home{
+        display: block;
+    }
+    .homeSec1{
+        text-align: center;
+        justify-content: center;
+    }
+    .hTxt1{
+        
+        font-size: 16px;
+
+    }
+    .hTxt2{
+        font-size: 16px;
+
+    }
+    .about{
+        display: block;
+    }
+    .heading{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+    .subHeading{
+        text-align: center;
+        font-size: 15px;
+    }
+}
