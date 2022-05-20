@@ -166,6 +166,7 @@ body{
        top: 0;
         padding: 0;
         margin: 0;
+        margin-bottom: 100px;
        width: 100%;
        background-color: white;
        display: flex;
@@ -179,27 +180,29 @@ body{
    }
     nav ul li a{
         text-align: center;
-        font-size: 7px;
+        font-size: 11px;
     }
 
     .home{
         display: block;
+        padding-top:50px;
     }
     .homeSec1{
-        text-align: center;
         justify-content: center;
+        text-align: center;
     }
     .hTxt1{
         
-        font-size: 16px;
+        font-size: 30px;
 
     }
     .hTxt2{
-        font-size: 16px;
+        font-size: 50px;
 
     }
     .about{
         display: block;
+        padding-top:100px;
     }
     .heading{
         display: block;
@@ -209,5 +212,38 @@ body{
     .subHeading{
         text-align: center;
         font-size: 15px;
+    }
+
+    /* service */
+    .service{
+        padding-top:100px;
+        display: block;
+    }
+
+
+    .serviceContainer{
+        margin: 50px 0;
+        padding:0 ;
+
+        
+        display: block;
+    }
+.img{
+    padding: 50px 0;
+}
+    .desc{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .project{
+        padding-top:100px;
+
+    }
+
+    /* contact  */
+    .contact{
+        padding-top:100px;
     }
 }
